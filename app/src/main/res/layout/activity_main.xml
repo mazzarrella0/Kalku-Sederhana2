@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="20dp"
+    android:background="#EDEFF5">
+
+    <!-- Card container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/bg_card"
+        android:elevation="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kalkulator Sederhana"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#4E342E"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/etAngka1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Angka 1"
+            android:inputType="numberDecimal"
+            android:padding="14dp"
+            android:textSize="16sp"
+            android:background="@drawable/bg_input"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etAngka2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Angka 2"
+            android:inputType="numberDecimal"
+            android:padding="14dp"
+            android:textSize="16sp"
+            android:background="@drawable/bg_input"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/btnTambah"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="+"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#E65100"
+                android:onClick="hitung"
+                android:layout_marginEnd="6dp" />
+
+            <Button
+                android:id="@+id/btnKurang"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="−"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#EF6C00"
+                android:onClick="hitung"
+                android:layout_marginEnd="6dp" />
+
+            <Button
+                android:id="@+id/btnKali"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="×"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#F57C00"
+                android:onClick="hitung"
+                android:layout_marginEnd="6dp" />
+
+            <Button
+                android:id="@+id/btnBagi"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="÷"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FFAB91"
+                android:onClick="hitung"
+                android:layout_marginEnd="6dp"/>
+
+            <Button
+                android:id="@+id/btnModulus"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="%"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#EC407A"
+                android:onClick="hitung" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#4E342E"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="@drawable/bg_input" />
+
+    </LinearLayout>
+
+</LinearLayout>
